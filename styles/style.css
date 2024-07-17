@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .inter-font {
     font-family: "Inter", sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    font-style: normal;
+    line-height: normal;
 }
 
-.ga-maamli-font {
-    font-family: "Ga Maamli", sans-serif;
+.playwrite-font {
+    font-family: "Playwrite CO", cursive;
+    font-size: 16px;
     font-weight: 400;
-    font-style: normal;
+    line-height: normal;
 }
 
 /* shared css */
@@ -24,7 +27,10 @@
 }
 
 .bg-color1 {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
+}
+.bg-color2 {
+    background-color: #FFFFFF;
 }
 
 /* body starts */
@@ -34,16 +40,21 @@ body {
 
 header {
     /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 /* nav styles */
 .nav-container {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 57px 190px 0px 190px;
+    margin-top: 57px;
 }
 
 .menu {
@@ -71,11 +82,148 @@ header {
     padding-right: 20px;
 }
 .home-button {
+    border: none;
     border-radius: 46px;
     padding: 8px 20px;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
+}
+
+/* banner styles */
+.banner-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.first-container {
+    width: 50%;
+    margin-top: 96px;
+}
+
+.first-container > h1 {
+    color: rgb(255, 255, 255);
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.first-container > h1 > span {
+    color: greenyellow;
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.first-container > p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.banner-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+.banner-button1 {
+    border: none;
+    border-radius: 46px;
+    padding: 16px 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.banner-button2 {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 46px;
+    padding: 16px 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.second-container {
+    width: 50%;
+    margin-top: 32px;
+}
+
+.second-container-img {
+    position:absolute;
+    left: 72%;
+}
+
+.banner-box1 {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 10%;
+    padding: 15px;
+    position:absolute;
+    left: 84%;
+    top: 30%;
+}
+
+.banner-box1-sub-box > h3 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900; 
+}
+
+.banner-box1-sub-box > p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.banner-box2 {
+    width: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54); 
+    padding: 15px;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 8px;
+    top: 60%;
+    left: 67%;
+}
+
+.tutorial > h3 {
+    color: rgb(250, 250, 249);
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.tutorial > p {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.circle-container {
+    width: 30%;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+.tutorial {
+    width: 70%;
 }
 
 
