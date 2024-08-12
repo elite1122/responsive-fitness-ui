@@ -184,27 +184,27 @@ header {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
-    width: 10%;
+    width: 175px;
     padding: 15px;
     position:absolute;
     left: 84%;
     top: 30%;
 }
 
-.banner-box1-sub-box > h3 {
+.banner-box1 > h3 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 900; 
 }
 
-.banner-box1-sub-box > p {
+.banner-box1 > p {
     color: rgba(255, 255, 255, 0.65);
     font-size: 13px;
     font-weight: 400;
 }
 
 .banner-box2 {
-    width: 10%;
+    width: 200px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
@@ -355,10 +355,13 @@ header {
 
 .run-image {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 .run-image > img {
     border-radius: 18px;
-    margin: 30px;
 }
 
 /* training and exercises section start */
@@ -584,8 +587,50 @@ header {
 
 .calculator-form {
     margin-bottom: 34px;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-areas: 
+    "height weight"
+    "age sex"
+    "activity activity";
 }
 
+#height {
+    grid-area: height;
+}
+#weight {
+    grid-area: weight;
+}
+#age {
+    grid-area: age;
+}
+#sex {
+    grid-area: sex;
+}
+#activity {
+    grid-area: activity;
+}
+
+.form-design {
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1); 
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding: 12px 40px 12px 20px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
 /* Meet our team section start */
 .team-container {
     width: 80%;

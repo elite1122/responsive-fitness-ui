@@ -36,10 +36,8 @@
             <div class="second-container">
                 <img class="second-container-img" src="images/image1.png" alt="">
                 <div class="banner-box1">
-                    <div class="banner-box1-sub-box">
-                        <h3>500+</h3>
-                        <p>Free Workout Videos</p>
-                    </div>
+                    <h3>500+</h3>
+                    <p>Free Workout Videos</p>
                 </div>
                 <div class="banner-box2">
                     <div class="circle-container">
@@ -170,10 +168,22 @@
                     <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access
                         to a gym. </p>
                     <form class="calculator-form" action="">
-                        <input type="number" placeholder="Height/cm" name="height" id="height" required>
-                        <input type="number" placeholder="Weight/kg" name="weight" id="weight" required>
-                        <input type="number" placeholder="Age" name="age" id="age" required>
-
+                        <input type="number" placeholder="Height/cm" name="height" id="height" class="form-design" required>
+                        <input type="number" placeholder="Weight/kg" name="weight" id="weight" class="form-design" required>
+                        <input type="number" placeholder="Age" name="age" id="age" class="form-design" required>
+                        <select id="sex" name="sex" class="form-design" required>
+                            <option value="" disabled selected>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <select id="activity" name="activity" class="form-design" required>
+                            <option value="" disabled selected>Select an activity factor</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="lightly_active">Lightly Active</option>
+                            <option value="moderately_active">Moderately Active</option>
+                            <option value="very_active">Very Active</option>
+                            <option value="extra_active">Extra Active</option>
+                        </select>
                     </form>
                     <button class="banner-button1 primary-color"><a href="#">Calculate</a></button>
                 </div>
