@@ -104,7 +104,7 @@ header {
 }
 
 .menu-bar {
-    display: none !important;
+    display: none;
 }
 
 .active {
@@ -150,7 +150,7 @@ header {
 .banner-buttons {
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 10px;
     margin-bottom: 80px;
 }
 
@@ -989,7 +989,6 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
-        position: relative;
         max-height: max-content;
         margin-bottom: -80px;
     }
@@ -1016,12 +1015,6 @@ footer {
         top: 0%;
     } */
 
-    .habit-img-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .title-subtitle>h2 {
         font-size: 32px;
     }
@@ -1037,7 +1030,7 @@ footer {
         cursor: pointer;
         padding: 10px;
     }
-    
+
     #menu-content {
         display: none;
         /* border: none;
@@ -1078,13 +1071,14 @@ footer {
     } */
 
     .menu-bar {
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         cursor: pointer;
-        display: inline-block;
+        display: block;
     }
 
     .banner-buttons {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -1154,10 +1148,12 @@ footer {
         height: 30px;
         height: 30px;
     }
-    .change-your-habit-container{
+
+    .change-your-habit-container {
         margin-top: 50px;
         margin-bottom: 17px;
     }
+
     .title-subtitle {
         margin: 0;
         width: 100%;
@@ -1169,6 +1165,10 @@ footer {
 
     .title-subtitle>p {
         margin-bottom: 58px;
+    }
+
+    .habit-img-container {
+        flex-direction: column;
     }
 
     .img-paragrapgh {
@@ -1221,6 +1221,7 @@ footer {
     .training-exercises-title-description>h2 {
         font-size: 32px;
     }
+
     .training-exercises-title-description>p {
         margin-bottom: 37px;
     }
@@ -1263,9 +1264,11 @@ footer {
     .package {
         width: 100%;
     }
-    .calculator-container{
+
+    .calculator-container {
         margin-top: 30px;
     }
+
     .title-description>h2 {
         margin-left: 10%;
         font-size: 32px;
@@ -1319,9 +1322,11 @@ footer {
     .form-design {
         width: 100%;
     }
+
     .team-container {
         margin-top: -55px;
     }
+
     .team-title-description {
         width: 100%;
     }
@@ -1329,7 +1334,8 @@ footer {
     .team-title-description>h2 {
         font-size: 32px;
     }
-    .team-title-description> p {
+
+    .team-title-description>p {
         margin-bottom: -20px;
     }
 
